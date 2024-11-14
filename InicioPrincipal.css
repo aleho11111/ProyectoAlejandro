@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #02197f, #24303c);
+    color: white;
+}
+
+.header {
+    background: #24303c;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    border-bottom: 4px solid #1f53c5;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 30px;
+    color: #1f53c5;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f53c5;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 20px;
+    background: transparent;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.navbar ul li a:hover {
+    background: #124b7b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffffff;
+}
+
+.navbar ul li a:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.header-content {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.header-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.content {
+    padding: 40px 20px;
+    margin-top: 80px;
+}
+
+.content-content {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.content-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.txt-p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: rgb(183, 183, 183);
+}

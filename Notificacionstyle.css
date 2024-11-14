@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #02197f, #24303c);
+    color: white;
+}
+
+.header {
+    background: #24303c;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    border-bottom: 4px solid #1f53c5;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 30px;
+    color: #1f53c5;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f53c5;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 20px;
+    background: transparent;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.navbar ul li a:hover {
+    background: #124b7b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffffff;
+}
+
+.navbar ul li a:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.lala {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2d3b47;
+    border-radius: 12px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.notificacion {
+    background: #24303c;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid #1f53c5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+.notificacion h3 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.notificacion p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.notificacion form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.notificacion button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.notificacion button[name="accion"][value="aceptar"] {
+    background: #1f53c5;
+}
+
+.notificacion button[name="accion"][value="aceptar"]:hover {
+    background: #124b7b;
+}
+
+.notificacion button[name="accion"][value="rechazar"] {
+    background: #a93226;
+}
+
+.notificacion button[name="accion"][value="rechazar"]:hover {
+    background: #8b0000;
+}
+
+.no-notificaciones {
+    text-align: center;
+    font-size: 1.1em;
+    color: #ffffff;
+}
